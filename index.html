@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pablo Jácome | Business Analyst Portfolio</title>
+  <style>
+    /* === Base === */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #0d1117;
+      color: #e6edf3;
+      line-height: 1.6;
+    }
+
+    a { color: #58a6ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* === Header === */
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 5rem 1rem 3rem;
+      background: linear-gradient(180deg, #0d1117 0%, #161b22 100%);
+      border-bottom: 1px solid #21262d;
+    }
+
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 3px solid #58a6ff;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      color: #58a6ff;
+    }
+
+    header p.role {
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+      color: #c9d1d9;
+    }
+
+    header p.softskills {
+      margin-top: 0.8rem;
+      font-size: 0.95rem;
+      color: #8b949e;
+    }
+
+    .buttons {
+      margin-top: 1.5rem;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      background-color: #58a6ff;
+      color: #0d1117;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #1f6feb;
+      color: #fff;
+    }
+
+    /* === About Section === */
+    section.about {
+      max-width: 800px;
+      margin: 3rem auto;
+      text-align: center;
+      padding: 0 1rem;
+    }
+
+    section.about h2 {
+      color: #58a6ff;
+      margin-bottom: 1rem;
+    }
+
+    section.about p {
+      color: #c9d1d9;
+    }
+
+    /* === Projects === */
+    section.projects {
+      max-width: 1100px;
+      margin: 4rem auto;
+      padding: 0 1rem;
+    }
+
+    section.projects h2 {
+      color: #58a6ff;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background-color: #161b22;
+      border: 1px solid #21262d;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover { transform: translateY(-5px); }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 1rem;
+    }
+
+    .card-content h3 {
+      color: #58a6ff;
+      margin-bottom: 0.5rem;
+    }
+
+    .card-content p {
+      font-size: 0.9rem;
+      color: #c9d1d9;
+      margin-bottom: 1rem;
+    }
+
+    .card-content .tools {
+      font-size: 0.85rem;
+      color: #8b949e;
+      margin-bottom: 0.5rem;
+    }
+
+    .links {
+      display: flex;
+      gap: 0.8rem;
+      flex-wrap: wrap;
+    }
+
+    .links a {
+      background-color: #58a6ff;
+      color: #0d1117;
+      padding: 0.4rem 0.8rem;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    .links a:hover {
+      background-color: #1f6feb;
+      color: #fff;
+    }
+
+    /* === Footer === */
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #8b949e;
+      border-top: 1px solid #21262d;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="images/Foto Perfil.jpg" alt="Pablo Jácome profile photo" />
+    <h1>Pablo Jácome</h1>
+    <p class="role">Business Analyst</p>
+    <p class="softskills">Analytical Thinking · Communication · Problem Solving · Business Acumen</p>
+    <div class="buttons">
+      <a href="#projects" class="btn">View Projects</a>
+      <a href="https://www.linkedin.com/in/pablo-jacome-data-analyst-6sigma" class="btn" target="_blank">LinkedIn</a>
+      <a href="mailto:pabdanjs@gmail.com" class="btn">Contact</a>
+    </div>
+  </header>
+
+  <section class="about">
+    <h2>About Me</h2>
+    <p>
+      I’m a Business Analyst with a background in Processes and an MBA in Business Intelligence.  
+      I help organizations connect data insights with strategic goals — improving sales processes, reducing delivery times, and enabling smarter decisions through analytical storytelling.
+    </p>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+
+      <!-- Project 1 -->
+      <div class="card">
+        <img src="images/Cyclistic.png" alt="Cyclistic project" />
+        <div class="card-content">
+          <h3>Cyclistic Bike-Share</h3>
+          <p>Identified user behavior patterns between casual and annual riders to increase memberships.</p>
+          <p class="tools">Tools: Excel · SQL Server · Tableau</p>
+          <div class="links">
+            <a href="https://github.com/pablojacome/cyclistic-pj.github.io" target="_blank">Code</a>
+            <a href="https://public.tableau.com/views/CapstoneGoogleDataAnalytics/Dashboard12" target="_blank">Dashboard</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="card">
+        <img src="images/showz_marketing.png" alt="Showz project" />
+        <div class="card-content">
+          <h3>Marketing Optimization – Showz</h3>
+          <p>Analyzed ad performance, customer acquisition cost, and ROI to optimize marketing budget allocation.</p>
+          <p class="tools">Tools: Python · Pandas · Seaborn · Cohort Analysis</p>
+          <div class="links">
+            <a href="https://github.com/pablojacome/showz-marketing-analysis" target="_blank">Code</a>
+            <a href="https://github.com/pablojacome/showz-marketing-analysis/blob/main/showz_marketing_analysis.ipynb" target="_blank">Notebook</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="card">
+        <img src="images/ab_test.png" alt="A/B Test project" />
+        <div class="card-content">
+          <h3>A/B Test – Online Shop</h3>
+          <p>Conducted statistical analysis to validate the impact of UI changes on conversion rate and revenue.</p>
+          <p class="tools">Tools: Python · SciPy · Matplotlib</p>
+          <div class="links">
+            <a href="https://github.com/pablojacome/Test-A-B-Online-Shop" target="_blank">Code</a>
+            <a href="https://github.com/pablojacome/Test-A-B-Online-Shop/blob/main/P10.%20A-B%20Test%20Online%20Shop.ipynb" target="_blank">Notebook</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="card">
+        <img src="images/call_me_maybe.png" alt="Call Me Maybe project" />
+        <div class="card-content">
+          <h3>Customer Retention – Call Me Maybe</h3>
+          <p>Developed data-driven insights for telecom churn prediction, enabling targeted customer retention strategies.</p>
+          <p class="tools">Tools: Python · Pandas · Matplotlib · Power BI</p>
+          <div class="links">
+            <a href="https://github.com/pablojacome/call-me-maybe" target="_blank">Code</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Pablo Jácome — Business Analyst Portfolio
+  </footer>
+</body>
+</html>
